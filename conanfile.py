@@ -7,6 +7,7 @@ class PrintConan(ConanFile):
     license = "MIT"
     url = "https://github.com/danimtb/conan-print"
     description = "Print execution of methods of a conanfile.py for each Conan command"
+    exports = "LICENSE"
 
     def source(self):
         self.output.info("source()")
@@ -41,7 +42,7 @@ class PrintConan(ConanFile):
     def package_id(self):
         self.output.info("package_id()")
 
-    def buiild_id():
+    def buiild_id(self):
         self.output.info("build_id()")
 
     def deploy(self):
